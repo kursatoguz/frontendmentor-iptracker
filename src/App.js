@@ -23,6 +23,7 @@ function App() {
         <input placeholder="Search for any IP adress or domain" />
         <span className="icon"> {">"} </span>
       </div>
+      <div className="info"></div>
     </header>
   );
 }
