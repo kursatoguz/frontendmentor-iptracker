@@ -22,7 +22,13 @@ function App() {
     } else {
       const data = await response.json();
       setIp(data.ip);
-      setLocation(data.location.country + ", " + data.location.city);
+      setLocation(
+        data.location.country +
+          "," +
+          data.location.city +
+          ", " +
+          data.location.region
+      );
       setTimezone(data.location.timezone);
       setIsp(data.isp);
       setLat(data.location.lat);
@@ -39,7 +45,13 @@ function App() {
       );
       const data = await response.json();
       setIp(data.ip);
-      setLocation(data.location.country + ", " + data.location.city);
+      setLocation(
+        data.location.country +
+          "," +
+          data.location.city +
+          ", " +
+          data.location.region
+      );
       setTimezone(data.location.timezone);
       setIsp(data.isp);
       setLat(data.location.lat);
@@ -59,6 +71,7 @@ function App() {
       position: toast.POSITION.TOP_RIGHT,
     });
   };
+  // whem page loads get the ip adress of the user
   useEffect(() => {
     getIp();
   }, []);
@@ -66,6 +79,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
       <header>
         <h1>IP Adress Tracker</h1>
         <form className="search-bar" onSubmit={handleSearch}>
