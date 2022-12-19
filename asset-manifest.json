@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/frontendmentor-iptracker/static/css/main.c51aa535.css",
+    "main.js": "/frontendmentor-iptracker/static/js/main.dd91afc9.js",
+    "static/media/pattern-bg.png": "/frontendmentor-iptracker/static/media/pattern-bg.a60a3c85aa8b88aac4b7.png",
+    "index.html": "/frontendmentor-iptracker/index.html",
+    "main.c51aa535.css.map": "/frontendmentor-iptracker/static/css/main.c51aa535.css.map",
+    "main.dd91afc9.js.map": "/frontendmentor-iptracker/static/js/main.dd91afc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c51aa535.css",
+    "static/js/main.dd91afc9.js"
+  ]
+}
